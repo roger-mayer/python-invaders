@@ -50,7 +50,7 @@ class AlienInvasion:
             self.ship.moving_right = True
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = True
-        elif event.ket == pygame.K_q:
+        elif event.key == pygame.K_q:
             sys.exit()
         elif event.key == pygame.K_SPACE:
             self._fire_bullet()
@@ -61,7 +61,7 @@ class AlienInvasion:
         elif event.key == pygame.K_LEFT:
             self.ship.moving_left = False
 
-    def _fire_bullets(self):
+    def _fire_bullet(self):
         new_bullet = Bullet(self)
         self.bullets.add(new_bullet)
 
